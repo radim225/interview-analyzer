@@ -4,7 +4,7 @@ Streamlit app that scores a “Why should we hire you?” answer with Azure AI L
 
 ## Security
 
-A Cognitive Services subscription key was previously committed in source. **That key must be rotated/revoked in Azure immediately** — removing it from git does not make the old value private. See [SECURITY.md](SECURITY.md).
+The Azure key and endpoint are read from environment variables or a local `.env` file, which is listed in `.gitignore`, so no credentials are stored in the repository.
 
 ## Setup
 
